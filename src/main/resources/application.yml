@@ -1,0 +1,3 @@
+libraries:
+  source: /home/askou/desktop/billeder
+  destination: /home/askou/desktop/billederUdenDuplikater
