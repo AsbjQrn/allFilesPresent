@@ -1,1 +1,2 @@
 # allFilesPresent
+Dette projekt er lavet til at gennemse en eller flere biblioteksstrukturer og afgøre om alle unikke filer i den ene struktur også er i den anden struktur.  Der tages højde for duplikater og at filerne kan ligge forskelligt i strukturerne. Det eneste krav er at programmet kan rapportere filer der måtte mangle i den ene struktur. Der arbejdes med at den ene struktur regnes for at være source og den anden destination. Forstået på den måde at source indeholder alt og destination kan mangle noget i forhold til source.
