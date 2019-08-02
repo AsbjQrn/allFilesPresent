@@ -55,8 +55,8 @@ public class LinuxCommandExecuter implements CommandExecuter, Loggable {
         }
 
 
-        return output.toString();
-//        return result.substring(0, result.indexOf(" ") + 1);
+        String result = output.toString();
+        return result.substring(0, result.indexOf(" ") + 1);
 
     }
 

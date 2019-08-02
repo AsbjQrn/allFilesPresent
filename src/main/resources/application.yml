@@ -1,3 +1,2 @@
-libraries:
-  source: /home/askou/desktop/billeder
-  destination: /home/askou/desktop/billederUdenDuplikater
+source: /home/askou/Desktop/billeder/testImagesSource
+destination: /home/askou/Desktop/billeder/testImagesDestination

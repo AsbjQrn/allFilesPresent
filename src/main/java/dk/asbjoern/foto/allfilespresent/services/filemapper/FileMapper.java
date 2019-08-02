@@ -1,10 +1,12 @@
 package dk.asbjoern.foto.allfilespresent.services.filemapper;
 
+import dk.asbjoern.foto.allfilespresent.beans.Image;
+
 import java.io.IOException;
-import java.util.Map;
+import java.util.List;
 
 public interface FileMapper {
 
-    Map<String, String> map(String[] absolutePaths) throws IOException;
+    List<Image> map(String[] absolutePaths) throws IOException;
 
 }
