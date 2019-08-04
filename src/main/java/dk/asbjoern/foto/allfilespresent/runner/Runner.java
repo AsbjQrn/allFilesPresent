@@ -30,6 +30,8 @@ public class Runner implements Loggable {
 
     public void run() throws IOException {
 
+        long start = System.currentTimeMillis();
+
         String[] tilBib = {tilBibliotek};
         List<Image> source = fileMapper.map(billedbiblioteker);
         List<Image> destination = fileMapper.map(tilBib);
@@ -39,6 +41,10 @@ public class Runner implements Loggable {
         for (Image image : differences){
             System.out.println(image.toString() + " findes ikke i destinationsmappe" );
         }
+
+        long slut = System.currentTimeMillis();
+        Long tid = slut - start;
+        System.out.println("Køretid i minutter: " + tid/1000/60);
 
 
 
