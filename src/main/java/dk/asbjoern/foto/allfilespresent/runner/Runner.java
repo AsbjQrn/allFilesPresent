@@ -33,9 +33,15 @@ public class Runner implements Loggable {
         long start = System.currentTimeMillis();
 
         String[] tilBib = {tilBibliotek};
+
         List<Image> source = fileMapper.map(billedbiblioteker);
+        System.out.println("Size of source: " + source.size());
+
         List<Image> destination = fileMapper.map(tilBib);
+        System.out.println("Size of destination: " + destination.size());
+
         List<Image> differences =  listComparator.findDifferences(source, destination);
+        System.out.println("Size of differences: " + differences.size());
 
 
         for (Image image : differences){

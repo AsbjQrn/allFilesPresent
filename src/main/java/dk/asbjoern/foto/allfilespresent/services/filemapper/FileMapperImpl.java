@@ -29,7 +29,9 @@ public class FileMapperImpl implements FileMapper {
                     p ->
                     {
                         String absolutePath = p.toFile().getAbsolutePath();
-                        String md5sum = commandExecuter.executeCommand(Arrays.asList("md5sum", p.toFile().getAbsolutePath()));
+                        String outputFromLinux = commandExecuter.executeCommand(Arrays.asList("md5sum", p.toFile().getAbsolutePath()));
+
+                        String md5sum = outputFromLinux.substring(0, outputFromLinux.indexOf(" "));
 
                         Image image = new Image(md5sum, absolutePath);
 
