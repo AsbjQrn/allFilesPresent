@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service
-public class FileMapperImpl implements FileMapper {
+public class FileMapperImpl implements dk.asbjoern.foto.allfilespresent.services.filemapper.FileMapper {
 
     CommandExecuter commandExecuter;
 
@@ -35,7 +35,7 @@ public class FileMapperImpl implements FileMapper {
 
                         Image image = new Image(md5sum, absolutePath);
 
-                        if(md5sum == null || md5sum.length() < 2 || absolutePath == null || absolutePath.length() < 2){
+                        if (md5sum == null || md5sum.length() < 2 || absolutePath == null || absolutePath.length() < 2) {
                             System.out.println("ERROR: " + image.toString());
                         }
                         listOfImages.add(image);
@@ -44,5 +44,11 @@ public class FileMapperImpl implements FileMapper {
         }
 
         return listOfImages;
+    }
+
+    @Override
+    public List<Image> map(String absolutePath) throws IOException {
+
+        return map(new String[]{absolutePath});
     }
 }

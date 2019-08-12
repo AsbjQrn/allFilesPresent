@@ -8,5 +8,6 @@ import java.util.List;
 public interface FileMapper {
 
     List<Image> map(String[] absolutePaths) throws IOException;
+    List<Image> map(String absolutePaths) throws IOException;
 
 }
