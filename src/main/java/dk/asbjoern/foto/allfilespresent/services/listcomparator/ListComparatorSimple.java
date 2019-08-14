@@ -57,7 +57,7 @@ public class ListComparatorSimple implements ListComparator {
                 sourceCounter++;
             }
 
-            if (sourceSorted.size() - 1 <= sourceCounter && destinationSorted.size() - 1 <= destinationCounter) {
+            if (sourceCounter  <= sourceSorted.size() - 1 && destinationCounter <=  destinationSorted.size() - 1) {
 
                 continue;
 
@@ -65,6 +65,7 @@ public class ListComparatorSimple implements ListComparator {
 
                 System.out.println("Sammenligning i findDifferencesMetode2 stoppes");
                 System.out.println("sourceSorted.size() - 1 <= sourceCounter && destinationSorted.size() - 1 <= destinationCounter: " + sourceSorted.size() + ", " + sourceCounter + ", " + destinationSorted.size() + ", " + destinationCounter);
+                read = false;
             }
         }
 

@@ -40,6 +40,15 @@ public class Runner implements Loggable {
         List<Image> destination = fileMapper.map(tilBibliotek);
         System.out.println("Size of destination: " + destination.size());
 
+
+
+        List<Image> differences2 =  listComparator.findDifferencesMetode2(source, destination);
+        System.out.println("Size of differences (metode2): " + differences2.size());
+
+        for (Image image : differences2){
+            System.out.println(image.toString() + " findes ikke i destinationsmappe" );
+        }
+
         List<Image> differences1 =  listComparator.findDifferencesMetode1(source, destination);
         System.out.println("Size of differences (metode1): " + differences1.size());
 
@@ -49,12 +58,6 @@ public class Runner implements Loggable {
         }
 
 
-        List<Image> differences2 =  listComparator.findDifferencesMetode2(source, destination);
-        System.out.println("Size of differences (metode2): " + differences2.size());
-
-        for (Image image : differences2){
-            System.out.println(image.toString() + " findes ikke i destinationsmappe" );
-        }
 
 
         long slut = System.currentTimeMillis();
