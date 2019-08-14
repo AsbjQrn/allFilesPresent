@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface ListComparator {
 
-    List<Image> findDifferences(List<Image> source, List<Image> destination);
+    List<Image> findDifferencesMetode1(List<Image> source, List<Image> destination);
+    List<Image> findDifferencesMetode2(List<Image> source, List<Image> destination);
 
 }
