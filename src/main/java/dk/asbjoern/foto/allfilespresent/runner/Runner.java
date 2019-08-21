@@ -42,14 +42,25 @@ public class Runner implements Loggable {
 
 
 
+        Long tidStartMetode2 = System.currentTimeMillis();
         List<Image> differences2 =  listComparator.findDifferencesMetode2(source, destination);
+        Long tidSlutMetode2 = System.currentTimeMillis();
+        Long tidforbrugMetode2Minutter = (tidSlutMetode2 - tidStartMetode2 / 1000 / 60);
+        System.out.println("Tidforbrug i minutter metode2: "  + tidforbrugMetode2Minutter) ;
         System.out.println("Size of differences (metode2): " + differences2.size());
 
         for (Image image : differences2){
             System.out.println(image.toString() + " findes ikke i destinationsmappe" );
         }
 
+
+        Long tidStartMetode1 = System.currentTimeMillis();
         List<Image> differences1 =  listComparator.findDifferencesMetode1(source, destination);
+        Long tidSlutMetode1 = System.currentTimeMillis();
+        Long tidforbrugMetode1Minutter = (tidSlutMetode1 - tidStartMetode1 / 1000 / 60);
+        System.out.println("Tidforbrug i minutter metode2: "  + tidforbrugMetode1Minutter) ;
+
+
         System.out.println("Size of differences (metode1): " + differences1.size());
 
 
