@@ -2,3 +2,5 @@
 source: //media/asbjoern/TO_GB-SIK_KOPI/fotoOrganiserOutput
 #destination: /media/asbjoern/925bd160-9cb1-4f8c-b329-1a01a1555203/main
 destination: /mnt/hgfs/D/fotoOrganiserOutput
+source: /media/asbjoern/925bd160-9cb1-4f8c-b329-1a01a1555203/hovedmappe, /media/asbjoern/925bd160-9cb1-4f8c-b329-1a01a1555203/iphoto
+destination: /media/asbjoern/925bd160-9cb1-4f8c-b329-1a01a1555203/fotoOrganiserOutput
