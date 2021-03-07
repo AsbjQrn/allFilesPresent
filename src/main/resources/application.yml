@@ -1,6 +1,2 @@
-#source: /media/asbjoern/925bd160-9cb1-4f8c-b329-1a01a1555203/Hovedmappe, /media/asbjoern/925bd160-9cb1-4f8c-b329-1a01a1555203/Iphoto og foto/Fotos Library.photoslibrary
-source: //media/asbjoern/TO_GB-SIK_KOPI/fotoOrganiserOutput
-#destination: /media/asbjoern/925bd160-9cb1-4f8c-b329-1a01a1555203/main
-destination: /mnt/hgfs/D/fotoOrganiserOutput
-source: /media/asbjoern/925bd160-9cb1-4f8c-b329-1a01a1555203/hovedmappe, /media/asbjoern/925bd160-9cb1-4f8c-b329-1a01a1555203/iphoto
+source: /media/asbjoern/a78b1484-dfe0-47b8-9e7e-0214b1caad70/fotoOrganiserOutput
 destination: /media/asbjoern/925bd160-9cb1-4f8c-b329-1a01a1555203/fotoOrganiserOutput

@@ -2,7 +2,6 @@ package dk.asbjoern.foto.allfilespresent.services.linux;
 
 
 import dk.asbjoern.foto.allfilespresent.helpers.Loggable;
-import dk.asbjoern.foto.allfilespresent.services.linux.CommandExecuter;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
